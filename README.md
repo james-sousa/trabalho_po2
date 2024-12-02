@@ -103,5 +103,5 @@ Certifique-se de que você possui os seguintes itens instalados:
 ### **1. Clonar o Repositório**
 Abra o terminal e execute o comando:  
 ```bash
-git clone https://github.com/seu-repositorio/sistema-pastelaria.git
-cd sistema-pastelaria
+https://github.com/james-sousa/trabalho_po2.git
+
