@@ -1,4 +1,4 @@
-# **Sistema de Gestão **
+# **Sistema de Gestão de Pastelaria**
 
 ## **Objetivos do Sistema**
 Os principais objetivos do sistema incluem:  
@@ -71,31 +71,37 @@ Os principais objetivos do sistema incluem:
 ## **Tecnologias Utilizadas**
 
 ### **Linguagem de Programação**  
-- O sistema foi desenvolvido utilizando **Python**, devido à sua versatilidade e amplo suporte para bibliotecas úteis para automação e gestão.
+- **Python:** Linguagem versátil e amplamente utilizada, ideal para automação e desenvolvimento de sistemas de gestão.
 
 ### **Banco de Dados**  
-- Utiliza **PostgreSQL** para armazenar informações de pedidos, estoque, funcionários e relatórios. O banco de dados foi escolhido por sua robustez e capacidade de lidar com grandes volumes de dados.
+- **PostgreSQL:** Banco de dados robusto, escolhido por sua capacidade de lidar com grandes volumes de informações relacionadas a pedidos, estoque e relatórios.
 
 ### **Bibliotecas Python**  
 - **`abc`:** Implementação de interfaces e classes abstratas para organizar a lógica do sistema.  
 - **`psycopg2`:** Conexão e manipulação do banco de dados PostgreSQL.  
 - **`datetime`:** Controle de datas e horários, essencial para pedidos e relatórios.  
 
+### **Docker**  
+- **Descrição:**  
+  - Docker é utilizado para simplificar a configuração e o gerenciamento do ambiente de desenvolvimento e produção.  
+  - Permite que o sistema seja executado em contêineres, garantindo portabilidade e consistência entre diferentes ambientes.  
+- **Benefícios:**  
+  - Facilita a implantação em servidores e máquinas locais.  
+  - Elimina conflitos de dependências.  
+  - Reduz o tempo de configuração do ambiente.
+
 ---
 
-## **Arquitetura do Sistema**
+## **Passo a Passo para Instalar e Executar a Aplicação**
 
-### **Módulos do Sistema**
-1. **Autenticação:**  
-   - Garante que apenas usuários autorizados tenham acesso às funcionalidades do sistema.  
+### **Pré-requisitos**
+Certifique-se de que você possui os seguintes itens instalados:  
+- [Python 3.8+](https://www.python.org/)  
+- [Docker](https://www.docker.com/) e [Docker Compose](https://docs.docker.com/compose/)  
+- [Git](https://git-scm.com/)  
 
-2. **Pedidos:**  
-   - Registra e gerencia pedidos, vinculando-os ao estoque e aos relatórios financeiros.  
-
-3. **Estoque:**  
-   - Monitora os produtos, atualizando automaticamente as quantidades disponíveis com base nas vendas.  
-
-4. **Relatórios:**  
-   - Gera informações precisas para análise e planejamento estratégico.  
-
-
+### **1. Clonar o Repositório**
+Abra o terminal e execute o comando:  
+```bash
+git clone https://github.com/seu-repositorio/sistema-pastelaria.git
+cd sistema-pastelaria
